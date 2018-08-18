@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{909950A7-CEFA-4E2B-ABB2-AE14BB5C81F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyProject</RootNamespace>
+    <AssemblyName>MyProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doktorlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktorlar.Designer.cs">
+      <DependentUpon>Doktorlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gecmis_Hastalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gecmis_Hastalar.Designer.cs">
+      <DependentUpon>Gecmis_Hastalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaBul.Designer.cs">
+      <DependentUpon>HastaBul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaKayıt.Designer.cs">
+      <DependentUpon>HastaKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıEkleme.Designer.cs">
+      <DependentUpon>KullanıcıEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcılar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcılar.Designer.cs">
+      <DependentUpon>Kullanıcılar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSayfası.Designer.cs">
+      <DependentUpon>LoginSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorEkleme.Designer.cs">
+      <DependentUpon>DoktorEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Poliklinikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Poliklinikler.Designer.cs">
+      <DependentUpon>Poliklinikler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoliklinkEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliklinkEkleme.Designer.cs">
+      <DependentUpon>PoliklinkEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Geçmiş_Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geçmiş_Rapor.Designer.cs">
+      <DependentUpon>Geçmiş_Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ücret_Raporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ücret_Raporlama.Designer.cs">
+      <DependentUpon>Ücret_Raporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriBaglantisi.cs" />
+    <Compile Include="VeriTabaniBaglantisi.cs" />
+    <Compile Include="ücretDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ücretDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktorlar.resx">
+      <DependentUpon>Doktorlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gecmis_Hastalar.resx">
+      <DependentUpon>Gecmis_Hastalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaBul.resx">
+      <DependentUpon>HastaBul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaKayıt.resx">
+      <DependentUpon>HastaKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıEkleme.resx">
+      <DependentUpon>KullanıcıEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcılar.resx">
+      <DependentUpon>Kullanıcılar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSayfası.resx">
+      <DependentUpon>LoginSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorEkleme.resx">
+      <DependentUpon>DoktorEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poliklinikler.resx">
+      <DependentUpon>Poliklinikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliklinkEkleme.resx">
+      <DependentUpon>PoliklinkEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Geçmiş_Rapor.resx">
+      <DependentUpon>Geçmiş_Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ücret_Raporlama.resx">
+      <DependentUpon>Ücret_Raporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MyProjectDataSet.xsc">
+      <DependentUpon>MyProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyProjectDataSet.xss">
+      <DependentUpon>MyProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ücretDataSet.xsc">
+      <DependentUpon>ücretDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ücretDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ücretDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ücretDataSet.xss">
+      <DependentUpon>ücretDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient-find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plk-add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plk-find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-6-Doctor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Medical-People-Patient-Male.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconshow-Medical-Patients.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatcow-Farm-Fresh-Report-word.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
